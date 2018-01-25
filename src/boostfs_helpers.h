@@ -43,7 +43,7 @@ namespace boost
       }
       
       // Now navigate down the directory branch
-      ret.append( itrTo, a_To.end() );
+      ret.append( itrTo, a_To.end(), boost::filesystem::path::codecvt());
       return ret;
     }
   } 
